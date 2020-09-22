@@ -9,7 +9,7 @@ a {
 
 
 body {
-  margin: 0;
+  margin: 2rem 2rem;
   padding: 0;
   background-color: #f6eddc;
 }
@@ -36,7 +36,7 @@ header {
   max-width: 80rem;
 }
 
-@media (max-width: 95rem) {
+@media (max-width: 100rem) {
   h1 {
     display: none;
   }
