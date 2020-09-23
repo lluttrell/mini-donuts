@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 11px;
 }
 
 a {
@@ -32,12 +32,12 @@ header {
   background-color: #800080;
   margin: 2rem auto;
   padding: 2rem 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   max-width: 80rem;
 }
 
 @media (max-width: 100rem) {
-  h1 {
+  header h1 {
     display: none;
   }
   #logo {
@@ -46,11 +46,18 @@ header {
   }
 }
 
-h1 {
+header h1 {
   margin: 0 2rem;
   color: #F6AE2D;
   font-family: Lobster;
   font-size: 2rem;
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav ul {
@@ -84,7 +91,7 @@ nav li:hover {
   height: 30rem;
   width: 30rem;
   margin: 0 auto;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .gallery {
@@ -95,7 +102,7 @@ nav li:hover {
 
 .gallery img {
   margin: 1rem 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 23rem;
   height: 23rem;
 }
@@ -105,5 +112,19 @@ nav li:hover {
 }
 
 .icon-list {
+  
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-list i, .icon-list h3 {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+table {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  border: 1px solid #800080;
+  border-radius: 0.5rem;
 }
