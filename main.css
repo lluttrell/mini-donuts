@@ -1,12 +1,6 @@
 html {
-  font-size: 11px;
+  font-size: 100%;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 
 body {
   margin: 2rem 2rem;
@@ -15,17 +9,18 @@ body {
 }
 
 main {
-  max-width: 80rem;
+  display: flex;
+  width: 80%;
+  max-width: 75rem;
   margin: 2rem auto;
   padding: 2rem 2rem;
-  /* border: 2px solid #800080; */
-  border-radius: 1rem;
   font-family: Montserrat;
   color: #800080;
-  /* background-color: #FFFFFF; */
+  flex-direction: column;
+  align-items: center;
 }
 
-header {
+header, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,18 +28,24 @@ header {
   margin: 2rem auto;
   padding: 2rem 0;
   border-radius: 0.5rem;
+  width: 95%;
   max-width: 80rem;
 }
 
-@media (max-width: 100rem) {
-  header h1 {
-    display: none;
-  }
-  #logo {
-    width: 15rem;
-    margin: 0 2rem
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
+
+p {
+  margin: 3rem 1rem;
+}
+
+footer p {
+  color: #F6AE2D;
+  margin: 0 2rem;
+}
+
 
 header h1 {
   margin: 0 2rem;
@@ -53,12 +54,6 @@ header h1 {
   font-size: 2rem;
 }
 
-main {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 nav ul {
   list-style-type: none;
@@ -82,8 +77,53 @@ nav li:hover {
   border-bottom: 0.2rem #F6AE2D solid;
 }
 
-#logo {
-  width: 15rem;
+form {
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #800080;
+  color: #F6AE2D;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 40%;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  font-size: 1rem;
+}
+
+textarea {
+  padding: 0.2rem;
+  width: 100%;
+  height: 8rem;
+  resize: none;
+}
+
+table {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  border: 1px solid #800080;
+  border-radius: 0.5rem;
+  border-spacing: 2rem 1.5rem;
+  text-align: center;
+
+}
+
+th {
+  font-size: 1.5rem;
 }
 
 .body-image {
@@ -122,9 +162,16 @@ nav li:hover {
   padding: 0 2rem;
 }
 
-table {
-  margin: 0 auto;
-  padding: 2rem 2rem;
-  border: 1px solid #800080;
-  border-radius: 0.5rem;
+#logo {
+  width: 15rem;
+}
+
+@media (max-width: 100rem) {
+  header h1 {
+    display: none;
+  }
+  #logo {
+    width: 15rem;
+    margin: 0 2rem
+  }
 }
