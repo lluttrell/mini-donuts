@@ -32,9 +32,13 @@ header, footer {
   max-width: 80rem;
 }
 
-a {
+header a {
   color: inherit;
   text-decoration: none;
+}
+
+a {
+  color: inherit
 }
 
 p {
@@ -42,6 +46,7 @@ p {
 }
 
 footer p {
+  font-family: Montserrat;
   color: #F6AE2D;
   margin: 0 2rem;
 }
